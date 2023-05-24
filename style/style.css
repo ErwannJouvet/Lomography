@@ -1,0 +1,636 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*********************************************************DEBUT HEADER ENTIER******************************************************/
+/* header
+{
+    position:fixed;
+    top:0;
+    width: 100%;
+} */
+.header
+{
+    height: 80px;
+    background-color: #24292f;
+}
+
+.navHeader
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 80px;
+}
+
+/*DEBUT MENU*/
+.headerGauche
+{
+    /* background-color: purple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerGauche a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.headerGauche a:hover
+{
+    color: #ed1c24;
+}
+/*FIN MENU*/
+
+
+/*DEBUT LOGO*/
+.logoLomography
+{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoLomography img
+{
+    height: 40px;
+    transition: transform .1s;
+}
+.logoLomography img:hover
+{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+/* FIN LOGO*/
+
+
+/*DEBUT BOUTON CONNEXION*/
+.headerDroit
+{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.headerDroit a
+{
+    color: white;
+    text-decoration: none;
+}
+.headerDroit a:hover
+{
+    color: #ed1c24;
+}
+.headerDroit img
+{
+    margin-top: 6px;
+    height: 25px;
+    filter: brightness(100);
+}
+.headerDroit img:hover
+{
+    filter: none;
+}
+/*FIN CSS BOUTON CONNEXION*/
+    /*****************************************************DEBUT HEADER ADMIN*************************************************/
+#header2
+{
+    background-color: rgba(128, 128, 128, 0.537);
+    border-top: solid 2px white;
+    height: 40px;
+    border-bottom: solid 2px white;
+    /* position:fixed;
+    top:80px;
+    width: 100%; */
+}
+
+#header2 nav
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40px;
+}
+/*DEBUT GESTION UTILISATEURS*/
+.gestionUtilisateurs
+{
+    margin-left: 9px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gestionUtilisateurs a
+{
+    text-decoration: none;
+    color: white;
+}
+.gestionUtilisateurs a:hover
+{
+    color:#ed1c24;
+}
+/*FIN GESTION UTILISATEURS*/
+
+/*DEBUT GESTION PRODUITS*/
+.gestionProduits
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gestionProduits a
+{
+    text-decoration: none;
+    color: white;
+}
+.gestionProduits a:hover
+{
+    color:#ed1c24;
+}
+/*FIN GESTION PRODUITS*/
+
+    /*****************************************************FIN HEADER ADMIN*************************************************/
+    
+/*********************************************************FIN HEADER ENTIER******************************************************/
+
+/*********************************************************DEBUT FOOTER****************************************************/
+
+footer
+{
+    background-color: #24292f;
+}
+/*DEBUT Partie Reseau Sociaux*/
+.imgReseau
+{
+    width: 40px;
+    filter: brightness(100);
+    transition: transform 0.1s;
+}
+.imgReseau:hover
+{
+    filter: none;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+.lienImgReseau
+{
+    text-decoration: none;
+}
+.contourBarreReseau
+{
+    display: flex;
+    height: 60px;
+    padding-top: 30px;
+}
+.barreReseau
+{   
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.barreReseau img
+{   
+    display: flex;
+    margin: 0 auto;
+}
+/*FIN Partie Reseau Sociaux*/
+
+/*DEBUT 2EME PARTIE DU FOOTER*/
+.secondeBarreFooter
+{   
+    display : flex;
+    padding-top: 20px;
+}
+.secondeBarreFooter div
+{   
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.secondeBarreFooter a
+{
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+}
+.secondeBarreFooter a:hover
+{
+    color: #ed1c24;
+}
+/*FIN 2EME PARTIE DU FOOTER*/
+
+/*DEBUT PARTIE COPYRIGHT*/
+.copyright
+{
+    padding-top: 40px;
+    color: white;
+    display: flex;
+    padding-bottom: 30px;
+}
+.copyright p
+{
+    margin: 0 auto;
+}
+/*FIN PARTIE COPYRIGHT*/
+
+/*********************************************************FIN FOOTER******************************************************/
+/*********************************************************PAGE PROFIL NON CONNECTE*****************************************************/
+
+.connexion
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.connexion h2
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connexion form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.trEmailMDP
+{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.tableConnexion
+{
+    width: 15%;
+}
+.tableConnexion td
+{   
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.trEmailMDP input
+{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.boutonsConnexion
+{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.boutonsConnexion input
+{
+    width: 95%;
+    height: 30px;
+    background-color: #24292f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.boutonsConnexion input:hover
+{
+    color: #ed1c24;
+    cursor: pointer;
+}
+.annulerConnexion
+{   
+    margin-left: 5px;
+}
+/*********************************************************FIN PAGE PROFIL NON CONNECTE*****************************************************/
+
+/*********************************************************PAGE PROFIL CONNECTE*************************************************************/
+.autourBjr
+{
+    display: flex;
+    margin-top: 3%;
+}
+.bjr
+{
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.autourInfosEtDeco
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
+    margin-bottom: 3.2%;
+}
+.autourInfos
+{
+    margin: 0 auto;
+}
+.titreInfosPerso
+{
+    font-size: 24px;
+}
+.infosperso
+{
+    margin-top: 2%;
+}
+.seDeconnecter
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.seDeconnecter p
+{
+ margin: 0 auto;
+ font-size: 24px;
+}
+.seDeconnecter a
+{
+    margin: 0 auto;
+}
+/*********************************************************FIN PAGE PROFIL CONNECTE*************************************************************/
+/*********************************************************DEBUT PAGE INDEX*************************************************************/
+/* POLITQUE ET MENTION LEGALE */
+
+.bodyIndex
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.imgIndex
+{
+    width: 80%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.textIndex
+{
+    
+    width: 75%;
+    margin-left: 10%;
+}
+.bvnIndex
+{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.pIndex
+{
+    margin-bottom: 15px;
+}
+.div2TextIndex
+{
+    margin-top: 10%;
+}
+.div2TextIndex a
+{
+    text-decoration: none;
+}
+.div2TextIndex input
+{
+    width: 49%;
+    margin-top: 4%;
+    text-align: center;
+    height: 30px;
+    background-color: #24292f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.div2TextIndex input:hover
+{
+    color: #ed1c24;
+    cursor: pointer;
+}
+/*********************************************************FIN PAGE INDEX*************************************************************/
+
+/*********************************************************DEBUT PAGE CREATION*************************************************************/
+.divCreationImpossible
+{
+    display: flex;
+}
+.creationImpossible
+{
+    font-size: 24px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+/*********************************************************FIN PAGE CREATION*************************************************************/
+.creation
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.creation h2
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.creation form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.trCreation
+{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.trCreation input
+{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.tableCreation
+{
+    width: 15%;
+}
+.tableCreation td
+{   
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.boutonsCreation
+{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.boutonsCreation input
+{
+    width: 95%;
+    height: 30px;
+    background-color: #24292f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.boutonsCreation input:hover
+{
+    color: #ed1c24;
+    cursor: pointer;
+}
+.annulerCreation
+{   
+    margin-left: 5px;
+}
+/*********************************************************FIN PAGE CREATION*************************************************************/
+
+/*********************************************************DEBUT PAGES PRODUITS*************************************************************/
+.contentProduit{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.rechercheProduit{
+    margin: 20px auto;
+    text-align: center;
+}
+
+hr{
+    border: 3px solid #d60000;
+    box-shadow: 0 0 20px rgba(24, 24, 24, 0.329);
+    margin: 50px auto;
+}
+
+td{
+    width: 150px;
+}
+
+tr{
+    line-height: 200px;
+}
+
+.imgProduit
+{
+    width: 200px;
+    margin: auto;
+    display: block;
+    transition: transform 0.1s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.imgProduit:hover{
+    -ms-transform: scale(2,5); /* IE 9 */
+    -webkit-transform: scale(2); /* Safari 3-8 */
+    transform: scale(2);
+}
+
+#ligneTab{
+    font-weight: bold;
+    line-height: 20px;
+}
+ 
+#colTab{
+    font-weight: bold;
+    color: #000000;
+    background-color: #adadad;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.styled-table td {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.styled-table td:hover {
+    background-color: #fd9494;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 10px 10px;
+}
+
+.styled-table tbody tr {
+    border-bottom: thin solid #b9b9b9;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #ff0000;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 5px solid #d60000;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.styled-tableInsert {
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.styled-tableInsert td {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+}
+
+.styled-tableInsert td:hover {
+    background-color: #fd9494;
+}
+
+.styled-tableInsert th,
+.styled-tableInsert td {
+    padding: 10px 10px;
+}
+
+.styled-tableInsert tbody tr {
+    border-bottom: thin solid #b9b9b9;
+}
+
+.styled-tableInsert tbody tr:nth-of-type(even) {
+    background-color: #ff0000;
+}
+
+.styled-tableInsert tbody tr:last-of-type {
+    border-bottom: 5px solid #d60000;
+}
+
+.styled-tableInsert tbody tr.active-row {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+
+/*********************************************************FIN PAGES PRODUITS*************************************************************/

@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header
+{
+    height: 80px;
+    background-color: rgb(245, 66,66);
+}
+
+nav
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 80px;
+}
+.logoLomography
+{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoLomography img
+{
+    height: 40px;
+}
+.boutonConnexion
+{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.menuDeroulant
+{
+    /* background-color: yellow; */
+    max-height: 80px;
+    height: 80px;
+}
+
+details
+{
+    /* background-color: purple; */ 
+    margin-top: 20px;
+}
+
+summary
+{
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+details[open]
+{
+
+}
+
+details[open] summary
+{
+
+}
+
+button
+{
+    height: 40px;
+}
